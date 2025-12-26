@@ -1,0 +1,258 @@
+# ===========================
+# BookTrack - Root .gitignore
+# ===========================
+
+# ==================
+# Backend (Node.js)
+# ==================
+
+# Dependencies
+backend/node_modules/
+node_modules/
+
+# Environment variables
+backend/.env
+.env
+.env.local
+.env*.local
+
+# Logs
+backend/logs/
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# ==================
+# Mobile (React Native/Expo)
+# ==================
+
+# Dependencies
+mobile/node_modules/
+
+# Expo
+mobile/.expo/
+mobile/dist/
+mobile/web-build/
+mobile/expo-env.d.ts
+.expo/
+dist/
+web-build/
+
+# Native
+mobile/.kotlin/
+mobile/*.orig.*
+mobile/*.jks
+mobile/*.p8
+mobile/*.p12
+mobile/*.key
+mobile/*.mobileprovision
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+mobile/.metro-health-check*
+.metro-health-check*
+
+# Generated native folders
+mobile/ios/
+mobile/android/
+ios/
+android/
+
+# ==================
+# OS Files
+# ==================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+*.pem
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ==================
+# IDE & Editors
+# ==================
+
+# VSCode
+.vscode/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# JetBrains IDEs (IntelliJ, WebStorm, etc.)
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+.idea_modules/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*.swn
+*.swm
+.*.sw[a-p]
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ==================
+# Build & Distribution
+# ==================
+
+# Build outputs
+build/
+dist/
+coverage/
+.nyc_output/
+
+# TypeScript
+*.tsbuildinfo
+
+# ==================
+# Docker
+# ==================
+
+# Docker volumes and data
+docker-compose.override.yml
+.dockerignore
+
+# ==================
+# Testing
+# ==================
+
+# Test coverage
+coverage/
+*.lcov
+.nyc_output/
+
+# ==================
+# Temporary Files
+# ==================
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+*.backup
+*.cache
+
+# ==================
+# Documentation
+# ==================
+
+# Ignore generated docs (keep source docs)
+docs/generated/
+docs/
+
+# ==================
+# Package Manager
+# ==================
+
+# Yarn
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+yarn-error.log
+
+# npm
+package-lock.json
+npm-debug.log*
+
+# pnpm
+pnpm-debug.log*
+
+# ==================
+# Misc
+# ==================
+
+# Debug files
+npm-debug.*
+yarn-debug.*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Serverless directories
+.serverless/
+
+# FuseBox cache
+.fusebox/
+
+# DynamoDB Local files
+.dynamodb/
+
+# TernJS port file
+.tern-port
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
+
+# Local History for Visual Studio Code
+.history/
