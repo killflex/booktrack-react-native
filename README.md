@@ -2,11 +2,7 @@
 
 A full-stack mobile application for tracking your personal reading journey. Built with React Native (Expo) for the frontend and Node.js/PostgreSQL for the backend.
 
-![BookTrack](https://img.shields.io/badge/Status-Production%20Ready-brightgreen)
-![Backend Tests](https://img.shields.io/badge/Backend%20Tests-18%2F18%20Passing-success)
-![Node](https://img.shields.io/badge/Node.js-18.x-green)
-![React Native](https://img.shields.io/badge/React%20Native-0.81.5-blue)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-blue)
+![BookTrack App Mockup](booktrack_mockup.png)
 
 ---
 
@@ -43,6 +39,7 @@ A full-stack mobile application for tracking your personal reading journey. Buil
 - 🎨 **Beautiful UI** - Modern design with smooth animations and toast notifications
 - ♻️ **Pull to Refresh** - Easily refresh your book list
 - 👤 **User Profile** - View your reading statistics and manage your account
+- ℹ️ **About Page** - Comprehensive app and developer information
 
 ### Technical Features
 
@@ -616,6 +613,7 @@ booktrack/
 │   │   │   ├── AppNavigator.js    # Authenticated routes
 │   │   │   └── AuthNavigator.js   # Authentication routes
 │   │   ├── screens/           # App screens
+│   │   │   ├── AboutScreen.js
 │   │   │   ├── AddBookScreen.js
 │   │   │   ├── BookDetailsScreen.js
 │   │   │   ├── EditBookScreen.js
@@ -854,66 +852,6 @@ npx expo start --reset-cache
 
 ---
 
-## 🚢 Deployment
-
-### Backend Deployment (Production)
-
-1. **Choose a hosting provider:**
-
-   - Heroku
-   - DigitalOcean
-   - AWS EC2
-   - Google Cloud Run
-
-2. **Set production environment variables:**
-
-   ```env
-   NODE_ENV=production
-   PORT=3000
-   DATABASE_URL=<production-postgres-url>
-   JWT_SECRET=<strong-random-secret>
-   ```
-
-3. **Deploy Docker container:**
-   ```bash
-   docker-compose -f docker-compose.prod.yml up -d
-   ```
-
-### Mobile App Deployment
-
-#### Deploy to Expo (Easiest)
-
-```bash
-# Install EAS CLI
-npm install -g eas-cli
-
-# Login to Expo
-eas login
-
-# Configure build
-eas build:configure
-
-# Build for Android
-eas build --platform android
-
-# Build for iOS (requires Mac + Apple Developer Account)
-eas build --platform ios
-```
-
-#### Deploy to App Stores
-
-1. Build production APK/IPA using EAS Build
-2. Create developer accounts (Google Play, Apple App Store)
-3. Upload builds and submit for review
-
----
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
 ## 👨‍💻 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
@@ -925,36 +863,3 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 5. Open a Pull Request
 
 ---
-
-## 📧 Support
-
-If you have any questions or issues, please:
-
-1. Check the [Troubleshooting](#troubleshooting) section
-2. Review the [Testing Documentation](mobile/PHASE8_TESTING.md)
-3. Open an issue on GitHub
-
----
-
-## 🙏 Acknowledgments
-
-- Built with ❤️ using React Native and Node.js
-- Icons and design inspiration from various sources
-- Special thanks to the open-source community
-
----
-
-## 📊 Project Status
-
-✅ **Phase 1-3:** Backend Foundation - Complete  
-✅ **Phase 4:** Frontend Foundation - Complete  
-✅ **Phase 5:** Authentication Screens - Complete  
-✅ **Phase 6:** Book Management - Complete  
-✅ **Phase 7:** Polish & Error Handling - Complete  
-✅ **Phase 8:** Testing & Documentation - Complete
-
-**Status:** 🎉 Production Ready!
-
----
-
-Made with 📚 by BookTrack Team
